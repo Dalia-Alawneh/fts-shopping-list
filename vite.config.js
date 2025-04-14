@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), flowbiteReact()],
   resolve: {
     alias: {
-      '#assets': path.resolve(path.__dirname, 'src/assets'),
+      '#assets': path?.resolve(__dirname, 'src/assets'),
     },
   },
 })
