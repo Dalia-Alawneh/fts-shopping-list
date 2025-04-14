@@ -31,12 +31,12 @@ const Navbar = () => {
         <NavLink to='/' className={({ isActive }) =>
           isActive
             ? "text-primary-green font-bold hover:text-primary-green text-base"
-            : "text-gray-700 hover:text-primary-green text-base"
+            : "text-gray-700 dark:text-white hover:text-primary-green text-base"
         }>Home</NavLink>
         <NavLink to='/cart' className={({ isActive }) =>
           isActive
             ? "text-primary-green font-bold hover:text-primary-green"
-            : "text-gray-700 hover:text-primary-green"
+            : "text-gray-700 dark:text-white hover:text-primary-green"
         }>
           <ShoppingCartIcon />
         </NavLink>
