@@ -13,6 +13,9 @@
 
 @theme{
   --color-primary-green: #659E38;
+  --color-primary-green-dark: #217421;
+  --color-gray: #EDEDED;
+  --color-primary-black: #001F00;
 }
 a {
   text-decoration: inherit;
@@ -25,7 +28,6 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
@@ -38,4 +40,15 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+p{
+  @apply text-xl text-primary-black;
+}
+.btn-primary-green{
+  @apply bg-primary-green px-6 py-2 text-white w-fit rounded transition-colors;
+}
+
+.btn-primary-green:hover{
+  @apply bg-primary-green-dark
 }

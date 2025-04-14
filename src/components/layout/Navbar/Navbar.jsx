@@ -13,7 +13,7 @@ import { ShoppingCartIcon } from 'lucide-react';
 const Navbar = () => {
 
   return (
-    <Nav rounded>
+    <Nav className='bg-gray'>
       <NavbarBrand href="/">
         <img src={logo} className="h-12 sm:h-16" alt="Logo" />
       </NavbarBrand>
