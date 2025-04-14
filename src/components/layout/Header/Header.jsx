@@ -1,5 +1,5 @@
-import headerImg from '#assets/header.png';
-import headerPlant from '#assets/headImg.png';
+import headerImg from '#assets/header/header.png';
+import headerPlant from '#assets/header/headImg.png';
 import { Link } from 'react-router-dom';
 const Header = () => {
   return (
