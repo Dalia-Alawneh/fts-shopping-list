@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { categories, products } from './../../constants/index.js';
-import TabBarItem from './../TabItem/TabItem.jsx';
-import ProductCard from '../ProductCard/ProductCard.jsx';
+import { categories, products } from '#components/constants/index.js';
+import TabBarItem from '#components/ui/TabItem/TabItem.jsx';
+import ProductCard from '#components/ui/ProductCard/ProductCard.jsx';
 import plantBanner from '#assets/plants/plantbanner.png';
 export default function TabBar() {
   const [activeTab, setActiveTab] = useState(categories[0]);

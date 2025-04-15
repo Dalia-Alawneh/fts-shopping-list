@@ -1,6 +1,6 @@
 import { ShoppingCart } from 'lucide-react';
 import React from 'react'
-import RatingStars from '../RatingStars/RatingStars.jsx';
+import RatingStars from '#components/ui/RatingStars/RatingStars.jsx';
 
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;

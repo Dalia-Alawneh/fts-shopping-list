@@ -1,5 +1,5 @@
 import React from 'react'
-import TabBar from '../../ui/TabBar/TabBar.jsx'
+import TabBar from '#components/ui/TabBar/TabBar.jsx'
 
 const Products = () => {
   return (
