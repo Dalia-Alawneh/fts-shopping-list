@@ -98,4 +98,26 @@ export const products = [
       name: 'Best Sellers'
     },
   },
+  {
+    id: 8,
+    name: "Peace Lily",
+    price: 26,
+    rating: 4.5,
+    image: plant2,
+    category: {
+      id: 3,
+      name: 'Trending Plants'
+    }
+  },
+  {
+    id: 8,
+    name: "Peace Lily",
+    price: 26,
+    rating: 4.5,
+    image: plant2,
+    category: {
+      id: 1,
+      name: 'New Arrival'
+    }
+  },
 ];
