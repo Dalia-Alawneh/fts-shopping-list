@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className='bg-gray px-14 dark:bg-gray-900 pt-12 min-h-screen'>
-      <div className="container mx-auto relative">
+      <div className="container mx-auto relative pt-20 lg:pt-0">
         <img src={headerImg} className='w-full absolute z-10 left-0 bottom-0' alt="header background" />
         <div className="grid grid-cols-1 lg:grid-cols-2 relative z-20 justify-between gap-10 xl:gap-20">
           <div className="flex flex-col justify-center gap-6">
