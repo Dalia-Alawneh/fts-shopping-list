@@ -1,4 +1,4 @@
-import { ShoppingBag, ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import React from 'react'
 
 const ProductCard = ({ product }) => {

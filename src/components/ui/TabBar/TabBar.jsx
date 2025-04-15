@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { categories, products } from './../../constants/index.js';
 import TabBarItem from './../TabItem/TabItem.jsx';
 import ProductCard from '../ProductCard/ProductCard.jsx';
-
+import plantBanner from '#assets/plants/plantbanner.png';
 export default function TabBar() {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
@@ -23,10 +23,15 @@ export default function TabBar() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredProducts.map((product) => (
-          <ProductCard product={product}/>
-        ))}
+      <div className="grid grid-cols-12 gap-6">
+        <div className='col-span-12 lg:col-span-4 order-2 lg:order-1'>
+          <img className='w-full' src={plantBanner} alt="" />
+        </div>
+        <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {filteredProducts.map((product) => (
+            <ProductCard product={product} />
+          ))}
+        </div>
       </div>
     </div>
   );
