@@ -29,7 +29,7 @@ export default function TabBar() {
         </div>
         <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredProducts.map((product) => (
-            <ProductCard product={product} />
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       </div>

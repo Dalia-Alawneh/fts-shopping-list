@@ -24,7 +24,7 @@ export const products = [
   {
     id: 1,
     name: "Snake Plant",
-    price: 4999,
+    price: 49,
     rating: 5,
     image: plant1,
     category: {
@@ -35,7 +35,7 @@ export const products = [
   {
     id: 2,
     name: "Peace Lily",
-    price: 5999,
+    price: 45,
     rating: 4.5,
     image: plant2,
     category: {
@@ -46,7 +46,7 @@ export const products = [
   {
     id: 3,
     name: "Monstera Plant",
-    price: 4999,
+    price: 59,
     rating: 5,
     image: plant3,
     category: {
@@ -57,7 +57,7 @@ export const products = [
   {
     id: 4,
     name: "ZZ Plant",
-    price: 2999,
+    price: 29,
     rating: 4,
     image: plant4,
     category: {
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 5,
     name: "Cactus Plant",
-    price: 1999,
+    price: 199,
     rating: 4,
     image: plant5,
     category: {
@@ -79,7 +79,7 @@ export const products = [
   {
     id: 6,
     name: "Scindapsus Pictus",
-    price: 4999,
+    price: 75,
     rating: 4,
     image: plant6,
     category: {
@@ -90,7 +90,7 @@ export const products = [
   {
     id: 7,
     name: "Peace Lily",
-    price: 5999,
+    price: 26,
     rating: 4.5,
     image: plant2,
     category: {
