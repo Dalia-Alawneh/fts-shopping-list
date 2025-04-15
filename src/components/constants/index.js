@@ -86,5 +86,16 @@ export const products = [
       id: 2,
       name: 'Best Sellers'
     },
-  }
+  },
+  {
+    id: 7,
+    name: "Peace Lily",
+    price: 5999,
+    rating: 4.5,
+    image: plant2,
+    category: {
+      id: 2,
+      name: 'Best Sellers'
+    },
+  },
 ];
