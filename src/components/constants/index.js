@@ -36,7 +36,7 @@ export const products = [
     id: 2,
     name: "Peace Lily",
     price: 5999,
-    rating: 4,
+    rating: 4.5,
     image: plant2,
     category: {
       id: 1,
