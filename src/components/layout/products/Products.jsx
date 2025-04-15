@@ -3,7 +3,7 @@ import TabBar from '../../ui/TabBar/TabBar.jsx'
 
 const Products = () => {
   return (
-    <div>
+    <div className='container mx-auto py-12'>
       <TabBar />
     </div>
   )

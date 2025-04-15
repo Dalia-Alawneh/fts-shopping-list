@@ -1,52 +1,33 @@
 import { useState } from 'react';
-import TabBarItem from '../TabItem/TabItem.jsx';
-
-const tabs = ['New Arrival', 'Best Sellers', 'Trending Plants'];
+import { categories, products } from './../../constants/index.js';
+import TabBarItem from './../TabItem/TabItem.jsx';
 
 export default function TabBar() {
-  const [activeTab, setActiveTab] = useState('New Arrival');
+  const [activeTab, setActiveTab] = useState(categories[0]);
 
-  const renderContent = () => {
-    switch (activeTab) {
-      case 'New Arrival':
-        return (
-          <p>
-            New Arrival
-          </p>
-        );
-      case 'Best Sellers':
-        return (
-          <p>
-            Best Sellers
-          </p>
-        );
-      case 'Trending Plants':
-        return (
-          <p>
-            Trending Plants
-          </p>
-        );
-
-      default:
-        return null;
-    }
-  };
+  const filteredProducts = products.filter(
+    (product) => product.category.id === activeTab.id
+  );
 
   return (
     <div className="w-full">
       <div className="flex border-b border-gray-200 dark:border-gray-700 mb-4">
-        {tabs.map((tab) => (
+        {categories.map((tab) => (
           <TabBarItem
-            key={tab}
-            title={tab}
-            isActive={activeTab === tab}
+            key={tab.id}
+            title={tab.name}
+            isActive={activeTab.id === tab.id}
             onClick={() => setActiveTab(tab)}
           />
         ))}
       </div>
 
-      <div className="text-gray-800 dark:text-white">
-        {renderContent()}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {filteredProducts.map((product) => (
+          <div>
+            {product.name}
+          </div>
+        ))}
       </div>
     </div>
   );
