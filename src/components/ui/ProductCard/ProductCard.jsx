@@ -4,8 +4,8 @@ import React from 'react'
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;
   return (
-    <div className='shadow bg-gray rounded max-h-[300px] border border-gray'>
-      <img src={image} className='h-full m-auto' alt={name} />
+    <div className='shadow bg-gray rounded max-h-[300px] border border-gray flex flex-col'>
+      <img src={image} className='h-full max-h-[200px] m-auto' alt={name} />
       <div className='p-2 py-5 bg-white border border-gray'>
         <div className="flex justify-between items-center">
           <div>
