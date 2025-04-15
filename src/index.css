@@ -52,3 +52,7 @@ p{
 .btn-primary-green:hover{
   @apply bg-primary-green-dark
 }
+
+.card p{
+  @apply text-sm text-gray-500;
+}

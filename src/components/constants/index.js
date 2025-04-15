@@ -4,6 +4,7 @@ import plant3 from '#assets/plants/plant3.png';
 import plant4 from '#assets/plants/plant4.png';
 import plant5 from '#assets/plants/plant5.png';
 import plant6 from '#assets/plants/plant6.png';
+import tipsBook from '#assets/tips/tipsBook.png';
 
 export const categories = [
   {
@@ -121,3 +122,10 @@ export const products = [
     }
   },
 ];
+
+export const greenHouseBook = {
+  name: 'How to Take Care of Plants',
+  image: tipsBook,
+  description: "Watch our greenhouse guide and discover simple tips for all your plant care needs! From watering frequency to choosing the right pot, we've got you covered. Also you can download the E-book that guides the same procedure covered in the video, click the download button below and enjoy the journey to a greener environment.",
+  rating: 5,
+}
