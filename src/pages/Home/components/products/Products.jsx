@@ -22,7 +22,7 @@ const Products = () => {
           <div className='col-span-12 lg:col-span-4 order-2 lg:order-1'>
             <img className='w-full' src={plantBanner} alt="Plant Banner" />
           </div>
-          <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-6 items-stretch">
+          <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-6 items-stretch">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
