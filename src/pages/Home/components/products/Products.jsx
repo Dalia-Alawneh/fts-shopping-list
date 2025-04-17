@@ -1,10 +1,34 @@
-import React from 'react'
-import TabBar from '#components/ui/TabBar/TabBar.jsx'
+import React, { useState } from 'react'
+import TabBar from '#components/shared/TabBar/TabBar.jsx'
+import { products, categories } from '#components/constants';
+import plantBanner from '#assets/plants/plantbanner.png';
+import ProductCard from '../ProductCard/ProductCard.jsx';
 
 const Products = () => {
+  const [activeTab, setActiveTab] = useState(categories[0]);
+
+  const filteredProducts = products.filter(
+    (item) => item.category.id === activeTab.id
+  );
   return (
-    <div className='container mx-auto py-12'>
-      <TabBar />
+    <div className='container mx-auto py-12 px-6 lg:px-0'>
+      <div className="w-full">
+        <TabBar
+          tabs={categories}
+          activeTab={activeTab}
+          onTabChange={setActiveTab}
+        />
+        <div className="grid grid-cols-12 gap-10">
+          <div className='col-span-12 lg:col-span-4 order-2 lg:order-1'>
+            <img className='w-full' src={plantBanner} alt="Plant Banner" />
+          </div>
+          <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-6 items-stretch">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
