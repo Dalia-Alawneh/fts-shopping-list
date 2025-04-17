@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home/Home.jsx"
-import Navbar from "./components/layout/Navbar/Navbar.jsx"
+import Navbar from "./components/shared/Navbar/Navbar.jsx"
 import { CartContext } from "./context/cartContext.jsx"
 import { useReducer } from "react"
 import { cartReducer, initialState } from "./reducers/cartReducer.js"

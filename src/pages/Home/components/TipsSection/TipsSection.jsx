@@ -16,7 +16,6 @@ const TipsSection = () => {
           </div>
         </div>
       </div>
-
     </section>
   )
 }
