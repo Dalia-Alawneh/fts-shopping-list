@@ -1,9 +1,15 @@
 import { ShoppingCart } from 'lucide-react';
-import React from 'react'
+import React, { useContext } from 'react'
 import RatingStars from '#components/ui/RatingStars/RatingStars.jsx';
+import { CartContext } from '../../../context/cartContext.jsx';
 
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;
+  const { dispatch } = useContext(CartContext);
+
+  const handleAddToCart = () => {
+    dispatch({ type: 'ADD_TO_CART', payload: product });
+  }
   return (
     <div className='bg-gray rounded max-h-[300px] flex flex-col transition-transform duration-700 hover:translate-y-2'>
       <img src={image} className='h-full max-h-[200px] m-auto' alt={name} />
@@ -14,7 +20,7 @@ const ProductCard = ({ product }) => {
             <RatingStars rating={rating} />
             <span className='text-primary-green-dark font-semibold'>${price}</span>
           </div>
-          <button><ShoppingCart size={32} className='text-primary-green transition hover:text-primary-green-dark' /></button>
+          <button onClick={handleAddToCart}><ShoppingCart size={32} className='text-primary-green transition hover:text-primary-green-dark' /></button>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const TipsSection = () => {
             <Card {...greenHouseBook} />
           </div>
           <div className='col-span-12 lg:col-span-8'>
-            <img src={cycleImage} style={{width: '100%'}} alt="cycleImage" />
+            <img src={cycleImage} className='w-full' alt="cycleImage" />
           </div>
         </div>
       </div>

@@ -111,7 +111,7 @@ export const products = [
     }
   },
   {
-    id: 8,
+    id: 9,
     name: "Peace Lily",
     price: 26,
     rating: 4.5,
