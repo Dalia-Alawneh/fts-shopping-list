@@ -29,6 +29,13 @@ const CartItems = () => {
     closeConfirmModal()
   }
 
+  const handleIncrement = (id) => {
+    dispatch({ type: "INCREMENT_QUANTITY", payload: { id } });
+  };
+
+  const handleDecrement = (id) => {
+    dispatch({ type: "DECREMENT_QUANTITY", payload: { id } });
+  };
   const totalAmount = cartItems.reduce((accum, item) =>
     accum + (item.price * item.quantity), 0);
   const totalCount = cartItems.reduce((accum, item) =>
@@ -38,6 +45,8 @@ const CartItems = () => {
       <CartItemsTable
         cartItems={cartItems}
         openConfirmModal={openConfirmModal}
+        onIncrement={handleIncrement}
+        onDecrement={handleDecrement}
       />
       {cartItems?.length > 0 && (
         <div className="flex justify-end mt-8 pe-0 lg:pe-10">
