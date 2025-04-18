@@ -59,7 +59,7 @@ const CartItems = () => {
               <h4 className="text-lg font-semibold">Number of Products</h4>
               <span className="text-primary-green font-bold text-xl">{totalCount}</span>
             </div>
-            <Link to='/checkout' className="w-full py-2 px-4 rounded-lg bg-primary-green text-white hover:bg-primary-green-dark transition duration-200">
+            <Link to='/checkout' className="block text-center text-lg w-full py-2 px-4 rounded-lg bg-primary-green text-white hover:bg-primary-green-dark transition duration-200">
               Proceed to Checkout
             </Link>
           </div>
