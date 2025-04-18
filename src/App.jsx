@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom"
-import Home from "./pages/Home/Home.jsx"
-import Navbar from "./components/shared/Navbar/Navbar.jsx"
-import { CartContext, CartProvider } from "./context/cartContext.jsx"
-import Cart from "./pages/Cart/Cart.jsx"
-import Checkout from "./pages/Checkout/Checkout.jsx"
+import Home from "./Pages/Home/Home.jsx";
+import Navbar from "./Components/shared/Navbar/Navbar.jsx"
+import { CartContext, CartProvider } from "./Context/CartContext.jsx"
+import Cart from "./Pages/Cart/Cart.jsx"
+import Checkout from "./Pages/Checkout/Checkout.jsx"
 import { Toaster } from "react-hot-toast"
 
 function App() {

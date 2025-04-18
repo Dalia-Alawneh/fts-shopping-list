@@ -1,5 +1,5 @@
-import PageHeader from "../../components/shared/PageHeader/PageHeader.jsx"
-import Input from "../../components/ui/Input/Input.jsx"
+import PageHeader from "../../Components/shared/PageHeader/PageHeader.jsx"
+import Input from "../../Components/ui/Input/Input.jsx"
 import CheckoutForm from "./Components/CheckoutForm/CheckoutForm.jsx"
 
 const Checkout = () => {

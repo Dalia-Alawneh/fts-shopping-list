@@ -3,7 +3,7 @@
   "components": [],
   "dark": true,
   "prefix": "",
-  "path": "src/components",
+  "path": "src/Components",
   "tsx": true,
   "rsc": true
 }

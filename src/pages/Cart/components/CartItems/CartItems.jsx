@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { CartContext } from '../../../../context/cartContext.jsx';
-import Modal from '../../../../components/shared/Modal/Modal.jsx';
+import { CartContext } from '../../../../Context/CartContext.jsx';
+import Modal from '../../../../Components/shared/Modal/Modal.jsx';
 import CartItemsTable from '../CartItemsTable/CartItemsTable.jsx';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';

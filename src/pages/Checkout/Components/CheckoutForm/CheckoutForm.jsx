@@ -1,15 +1,15 @@
 import { CheckCircle2, CheckCircle2Icon } from "lucide-react";
-import Modal from "../../../../components/shared/Modal/Modal.jsx";
-import Input from "../../../../components/ui/Input/Input.jsx";
+import Modal from "../../../../Components/shared/Modal/Modal.jsx";
+import Input from "../../../../Components/ui/Input/Input.jsx";
 import { useContext, useState } from "react";
-import { CartContext } from "../../../../context/cartContext.jsx";
+import { CartContext } from "../../../../Context/CartContext.jsx";
 import toast from "react-hot-toast";
 
 const CheckoutForm = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [orderInfo, setOrderInfo] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const {state, dispatch} = useContext(CartContext);
+  const { state, dispatch } = useContext(CartContext);
   const openConfirmModal = () => setIsOpen(true);
   const closeConfirmModal = () => setIsOpen(false);
 
@@ -35,8 +35,8 @@ const CheckoutForm = () => {
       customer: orderInfo,
       items: state.cartItems,
     };
-  
-    dispatch({type: 'DELETE_All_CART'});
+
+    dispatch({ type: 'DELETE_All_CART' });
     console.log("Order submitted:", fullOrder);
     toast.success("Order successfully submitted!");
     setIsSubmitted(true);
@@ -46,7 +46,7 @@ const CheckoutForm = () => {
   if (isSubmitted) {
     return (
       <div className="my-20 text-center flex flex-col items-center gap-3">
-        <CheckCircle2 size={60} className="text-primary-green"/>
+        <CheckCircle2 size={60} className="text-primary-green" />
         <h2 className="text-2xl font-bold text-primary-green mb-4">Thank you for your order!</h2>
         <div className="text-gray-500">Your order has been submitted successfully. We will contact you soon.</div>
       </div>

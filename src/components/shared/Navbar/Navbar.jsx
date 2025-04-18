@@ -9,7 +9,7 @@ import logo from '#assets/logo.svg';
 import { NavLink } from "react-router-dom";
 import { customInputTheme } from '../../../theme/index.js';
 import { ShoppingCartIcon } from 'lucide-react';
-import { CartContext } from '../../../context/cartContext.jsx';
+import { CartContext } from '../../../Context/CartContext.jsx';
 
 const Navbar = () => {
   const { state } = useContext(CartContext);
