@@ -2,6 +2,7 @@ import { ShoppingCart } from 'lucide-react';
 import React, { useContext } from 'react'
 import RatingStars from '#components/ui/RatingStars/RatingStars.jsx';
 import { CartContext } from '../../../../context/cartContext.jsx';
+import toast from 'react-hot-toast';
 
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;
@@ -9,6 +10,7 @@ const ProductCard = ({ product }) => {
 
   const handleAddToCart = () => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
+    toast.success("Product added successfully");
   }
   return (
     <div className='bg-gray rounded max-h-[300px] flex flex-col transition-transform duration-700 hover:translate-y-2'>

@@ -3,6 +3,7 @@ import { CartContext } from '../../../../context/cartContext.jsx';
 import Modal from '../../../../components/shared/Modal/Modal.jsx';
 import CartItemsTable from '../CartItemsTable/CartItemsTable.jsx';
 import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
 const CartItems = () => {
   const { state } = useContext(CartContext);
   const { cartItems } = state;
@@ -24,6 +25,7 @@ const CartItems = () => {
       type: "DELETE_FROM_CART",
       payload: { id: selectedId }
     })
+    toast.success("Product deleted successfully");
     closeConfirmModal()
   }
 

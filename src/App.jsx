@@ -4,6 +4,7 @@ import Navbar from "./components/shared/Navbar/Navbar.jsx"
 import { CartContext, CartProvider } from "./context/cartContext.jsx"
 import Cart from "./pages/Cart/Cart.jsx"
 import Checkout from "./pages/Checkout/Checkout.jsx"
+import { Toaster } from "react-hot-toast"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/cart" Component={Cart} />
         <Route path="/checkout" Component={Checkout} />
       </Routes>
+      <Toaster />
     </CartProvider>
   )
 }

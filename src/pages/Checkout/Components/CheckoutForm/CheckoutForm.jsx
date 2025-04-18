@@ -3,6 +3,7 @@ import Modal from "../../../../components/shared/Modal/Modal.jsx";
 import Input from "../../../../components/ui/Input/Input.jsx";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../../context/cartContext.jsx";
+import toast from "react-hot-toast";
 
 const CheckoutForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const CheckoutForm = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!orderInfo.name || !orderInfo.email) {
+      toast.error("Please fill in all fields");
       return;
     }
     openConfirmModal();
@@ -35,6 +37,7 @@ const CheckoutForm = () => {
     };
   
     console.log("Order submitted:", fullOrder);
+    toast.success("Order successfully submitted!");
     setIsSubmitted(true);
     closeConfirmModal();
   };
