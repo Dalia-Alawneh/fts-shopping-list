@@ -7,12 +7,12 @@ const TipsSection = () => {
     <section>
       <div className="container mx-auto py-12 px-3">
         <h2 className='text-3xl font-bold mb-10'>Greenhouse <span className='text-primary-green'>Tips</span></h2>
-        <div className="grid grid-cols-12 gap-12">
-          <div className="col-span-12 lg:col-span-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12">
+          <div className="">
             <Card {...greenHouseBook} />
           </div>
-          <div className='col-span-12 lg:col-span-8'>
-            <img src={cycleImage} className='w-full' alt="cycleImage" />
+          <div className="col-span-2 px-10">
+            <img src={cycleImage} className="w-full" alt="cycleImage" />
           </div>
         </div>
       </div>

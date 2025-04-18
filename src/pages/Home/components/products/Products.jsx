@@ -18,11 +18,11 @@ const Products = () => {
           activeTab={activeTab}
           onTabChange={setActiveTab}
         />
-        <div className="grid grid-cols-12 gap-10">
-          <div className='col-span-12 lg:col-span-4 order-2 lg:order-1'>
+        <div className="grid grid-cols-4 gap-10">
+          <div className='col-span-4 lg:col-span-1 order-2 lg:order-1'>
             <img className='w-full' src={plantBanner} alt="Plant Banner" />
           </div>
-          <div className="order-1 col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-6 items-stretch">
+          <div className="order-1 col-span-4 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-6 items-stretch">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
