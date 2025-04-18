@@ -1,5 +1,7 @@
+import { getItemFromLocalStorage } from "../utils/localstorage.js";
+
 export const initialState = {
-  cartItems: [],
+  cartItems: getItemFromLocalStorage('CART') || [],
 }
 
 export const cartReducer = (state, action) => {
@@ -9,15 +11,14 @@ export const cartReducer = (state, action) => {
       const existingIndex = state.cartItems.findIndex(item => item.id === action.payload.id);
 
       if (existingIndex !== -1) {
-        const updatedItems = state.cartItems.map((item, index) =>
+        const updatedCart = state.cartItems.map((item, index) =>
           index === existingIndex
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
-
         return {
           ...state,
-          cartItems: updatedItems,
+          cartItems: updatedCart,
         };
       } else {
         const newCartItems = [
