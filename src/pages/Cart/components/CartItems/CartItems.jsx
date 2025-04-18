@@ -56,7 +56,7 @@ const CartItems = () => {
         </tbody>
       </table>
       <Modal title={'Confirm Delete'}
-        description={"Are you sure you want to delete this item you will not be abel to revert?!"}
+        description={"Are you sure you want to delete this item? This action cannot be undone."}
         isOpen={isOpen}
         onClose={closeConfirmModal}
         onButtonClick={handleDeleteCartItem}
