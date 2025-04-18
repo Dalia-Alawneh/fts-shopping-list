@@ -1,0 +1,7 @@
+.header{
+  background: linear-gradient(#4e4e4e68, #191919c8) ,url('../../../assets/header/page-header.webp');
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  place-items: center;
+}
