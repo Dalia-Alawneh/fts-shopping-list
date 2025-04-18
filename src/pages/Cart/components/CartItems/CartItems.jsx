@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../../../../context/cartContext.jsx';
-import CartItemRow from '../CartItemRow/CartItemRow.jsx';
 import Modal from '../../../../components/shared/Modal/Modal.jsx';
+import CartItemsTable from '../CartItemsTable/CartItemsTable.jsx';
 const CartItems = () => {
   const { state } = useContext(CartContext);
   const { cartItems } = state;
@@ -32,34 +32,10 @@ const CartItems = () => {
     accum + item.quantity, 0);
   return (
     <div className="overflow-x-auto p-10">
-      <table className="min-w-full">
-        <thead className='border-b border-gray-200'>
-          <tr>
-            <th className="p-2">Image</th>
-            <th className="p-2">Product</th>
-            <th className="p-2">Price</th>
-            <th className="p-2">Quantity</th>
-            <th className="p-2">Total</th>
-            <th className="p-2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cartItems?.length === 0 ? (
-            <tr>
-              <td colSpan="6" className="text-center p-4 text-gray-500">
-                Your cart is empty.
-              </td>
-            </tr>
-          ) :
-            cartItems?.map(item => (
-              <CartItemRow
-                key={item.id}
-                item={item}
-                onDeleteBtnClick={openConfirmModal}
-              />
-            ))}
-        </tbody>
-      </table>
+      <CartItemsTable
+        cartItems={cartItems}
+        openConfirmModal={openConfirmModal}
+      />
       {cartItems?.length > 0 && (
         <div className="flex justify-end mt-8 pe-0 lg:pe-10">
           <div className="bg-white rounded-2xl shadow-md p-6 w-full max-w-sm border border-gray-200">

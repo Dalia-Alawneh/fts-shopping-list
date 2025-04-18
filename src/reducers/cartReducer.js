@@ -31,8 +31,7 @@ export const cartReducer = (state, action) => {
         };
       }
     }
-    case 'DELETE_FROM_CART': { 
-console.log(action);
+    case 'DELETE_FROM_CART': {
       const updatedCart = state.cartItems.filter(item => item.id !== action.payload.id)
       return {
         ...state,
