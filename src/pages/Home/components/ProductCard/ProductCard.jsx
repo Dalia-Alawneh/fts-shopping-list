@@ -5,12 +5,9 @@ import { CartContext } from '../../../../context/cartContext.jsx';
 
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;
-  const { state, dispatch } = useContext(CartContext);
-  console.log(state);
+  const { dispatch } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    console.log("di");
-    
     dispatch({ type: 'ADD_TO_CART', payload: product });
   }
   return (

@@ -9,7 +9,7 @@ export const cartReducer = (state, action) => {
       const existingIndex = state.cartItems.findIndex(item => item.id === action.payload.id);
 
       if (existingIndex !== -1) {
-        const updatedItems = state.cartItems.map((item, index) => 
+        const updatedItems = state.cartItems.map((item, index) =>
           index === existingIndex
             ? { ...item, quantity: item.quantity + 1 }
             : item
@@ -29,6 +29,14 @@ export const cartReducer = (state, action) => {
           ...state,
           cartItems: newCartItems,
         };
+      }
+    }
+    case 'DELETE_FROM_CART': { 
+console.log(action);
+      const updatedCart = state.cartItems.filter(item => item.id !== action.payload.id)
+      return {
+        ...state,
+        cartItems: updatedCart
       }
     }
     default:
