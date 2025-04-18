@@ -36,6 +36,7 @@ const CheckoutForm = () => {
       items: state.cartItems,
     };
   
+    dispatch({type: 'DELETE_All_CART'});
     console.log("Order submitted:", fullOrder);
     toast.success("Order successfully submitted!");
     setIsSubmitted(true);

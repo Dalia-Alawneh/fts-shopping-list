@@ -39,6 +39,12 @@ export const cartReducer = (state, action) => {
         cartItems: updatedCart
       }
     }
+    case 'DELETE_All_CART': {
+      return {
+        ...state,
+        cartItems: []
+      }
+    }
     default:
       return state;
   }
