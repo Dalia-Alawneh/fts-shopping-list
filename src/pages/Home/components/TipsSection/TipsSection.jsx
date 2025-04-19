@@ -1,6 +1,6 @@
 import React from 'react'
-import { greenHouseBook } from '#components/constants/index.js';
-import Card from '#components/shared/Card/Card.jsx';
+import { greenHouseBook } from '#Components/constants/index.js';
+import Card from '#Components/shared/Card';
 import cycleImage from '#assets/tips/cycleImage.png';
 const TipsSection = () => {
   return (

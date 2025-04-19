@@ -1,4 +1,4 @@
-import CartItemRow from "../CartItemRow/CartItemRow.jsx"
+import CartItemRow from "../CartItemRow"
 
 const CartItemsTable = ({cartItems, openConfirmModal, onIncrement, onDecrement}) => {
   return (

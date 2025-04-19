@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import TabBar from '#components/shared/TabBar/TabBar.jsx'
-import { products, categories } from '#components/constants';
+import TabBar from '#Components/shared/TabBar'
+import { products, categories } from '#Components/constants';
 import plantBanner from '#assets/plants/plantbanner.png';
-import ProductCard from '../ProductCard/ProductCard.jsx';
+import ProductCard from '../ProductCard';
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState(categories[0]);

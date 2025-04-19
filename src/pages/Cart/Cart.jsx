@@ -1,5 +1,5 @@
-import PageHeader from '../../Components/shared/PageHeader/PageHeader.jsx'
-import CartItems from './Components/CartItems/CartItems.jsx'
+import PageHeader from '../../Components/shared/PageHeader'
+import CartItems from './Components/CartItems'
 
 const Cart = () => {
   return (

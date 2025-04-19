@@ -1,4 +1,4 @@
-import TabBarItem from '#components/ui/TabItem/TabItem.jsx';
+import TabBarItem from '#Components/ui/TabItem';
 
 export default function TabBar({ activeTab, onTabChange, tabs }) {
   return (

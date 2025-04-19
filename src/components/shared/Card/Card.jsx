@@ -1,5 +1,5 @@
 import React from 'react'
-import RatingStars from '../../ui/RatingStars/RatingStars.jsx'
+import RatingStars from '../../ui/RatingStars'
 
 const Card = ({image, name, rating, description}) => {
   return (

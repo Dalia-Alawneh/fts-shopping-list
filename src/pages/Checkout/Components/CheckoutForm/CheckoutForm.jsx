@@ -1,6 +1,6 @@
 import { CheckCircle2, CheckCircle2Icon } from "lucide-react";
-import Modal from "../../../../Components/shared/Modal/Modal.jsx";
-import Input from "../../../../Components/ui/Input/Input.jsx";
+import Modal from "#Components/shared/Modal";
+import Input from "#Components/ui/Input";
 import { useContext, useState } from "react";
 import { CartContext } from "../../../../Context/CartContext.jsx";
 import toast from "react-hot-toast";
