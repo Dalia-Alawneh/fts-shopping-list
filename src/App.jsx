@@ -5,6 +5,7 @@ import { CartContext, CartProvider } from "./Context/CartContext.jsx"
 import Cart from "./Pages/Cart"
 import Checkout from "./Pages/Checkout"
 import { Toaster } from "react-hot-toast"
+import Footer from "./Components/shared/Footer/Footer.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/cart" Component={Cart} />
         <Route path="/checkout" Component={Checkout} />
       </Routes>
+      <Footer/>
       <Toaster />
     </CartProvider>
   )
