@@ -1,4 +1,3 @@
-import React, { useContext } from 'react'
 import {
   Navbar as Nav,
   NavbarBrand,
@@ -8,12 +7,9 @@ import {
 import logo from '#assets/logo.svg';
 import { NavLink } from "react-router-dom";
 import { customInputTheme } from '../../../theme/index.js';
-import { ShoppingCartIcon } from 'lucide-react';
-import { CartContext } from '../../../Context/CartContext.jsx';
+import CartNavLink from "./CartNavLink";
 
 const Navbar = () => {
-  const { state } = useContext(CartContext);
-  const { cartItems } = state;
   return (
     <Nav className='bg-gray fixed top-0 w-full z-50'>
       <NavbarBrand href="/">
@@ -35,15 +31,7 @@ const Navbar = () => {
             ? "text-primary-green font-bold hover:text-primary-green text-base"
             : "text-gray-700 dark:text-white hover:text-primary-green text-base"
         }>Home</NavLink>
-        <NavLink to='/cart' className={`relative ${({ isActive }) =>
-          isActive
-            ? "text-primary-green font-bold hover:text-primary-green"
-            : "text-gray-700 dark:text-white hover:text-primary-green"
-          }`}>
-          <span className='absolute -right-2 -top-2.5 w-5 h-5 text-xs flex justify-center items-center rounded-full
-          bg-primary-green-dark text-white'>{cartItems.length}</span>
-          <ShoppingCartIcon />
-        </NavLink>
+        <CartNavLink/>
       </NavbarCollapse>
     </Nav>
   );
