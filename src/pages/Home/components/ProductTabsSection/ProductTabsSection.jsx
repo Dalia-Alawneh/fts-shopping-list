@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import TabBar from '#Components/shared/TabBar'
-import { products, categories } from '#Components/constants';
 import plantBanner from '#assets/plants/plantbanner.png';
-import ProductCard from '../ProductCard';
+import { categories } from '#Components/constants';
+import TabBar from '#Components/shared/TabBar';
+import { useState } from 'react'
+import Products from '../../../../Components/shared/Products/Products.jsx';
 
-const Products = () => {
+const ProductTabsSection = ({ products }) => {
   const [activeTab, setActiveTab] = useState(categories[0]);
 
-  const filteredProducts = products.filter(
+  const filteredProducts = products?.filter(
     (item) => item.category.id === activeTab.id
   );
   return (
@@ -22,15 +22,11 @@ const Products = () => {
           <div className='col-span-4 lg:col-span-1 order-2 lg:order-1'>
             <img className='w-full' src={plantBanner} alt="Plant Banner" />
           </div>
-          <div className="order-1 col-span-4 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 lg:gap-6 items-stretch">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <Products products={filteredProducts} />
         </div>
       </div>
     </div>
   )
 }
 
-export default Products
+export default ProductTabsSection

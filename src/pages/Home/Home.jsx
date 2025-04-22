@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from './Components/Header'
-import Products from './Components/products'
 import TipsSection from './Components/TipsSection'
+import ProductTabsSection from './Components/ProductTabsSection/ProductTabsSection.jsx'
 
 const Home = () => {
   return (
     <>
-      <Header/>
-      <Products/>
-      <TipsSection/>
+      <Header />
+      <ProductTabsSection />
+      <TipsSection />
     </>
   )
 }
