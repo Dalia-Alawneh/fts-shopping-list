@@ -23,7 +23,7 @@ const FilteringSidebar = ({filters, handleInputChange, categories}) => {
       >
         <option value="All">All</option>
         {
-          categories.map(category =>
+          categories?.map(category =>
             <option key={category.id} value={category.id}>
               {category.name}
             </option>

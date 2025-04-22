@@ -31,6 +31,11 @@ const Navbar = () => {
             ? "text-primary-green font-bold hover:text-primary-green text-base"
             : "text-gray-700 dark:text-white hover:text-primary-green text-base"
         }>Home</NavLink>
+        <NavLink to='/products' className={({ isActive }) =>
+          isActive
+            ? "text-primary-green font-bold hover:text-primary-green text-base"
+            : "text-gray-700 dark:text-white hover:text-primary-green text-base"
+        }>Products</NavLink>
         <CartNavLink/>
       </NavbarCollapse>
     </Nav>
