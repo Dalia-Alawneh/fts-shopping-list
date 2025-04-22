@@ -28,6 +28,11 @@ body {
   min-height: 100vh;
 }
 
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   line-height: 1.1;
 }
