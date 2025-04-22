@@ -121,6 +121,28 @@ export const products = [
       name: 'New Arrival'
     }
   },
+  {
+    id: 10,
+    name: "Cactus Plant",
+    price: 199,
+    rating: 4,
+    image: plant5,
+    category: {
+      id: 1,
+      name: 'New Arrival'
+    },
+  },
+  {
+    id: 11,
+    name: "Scindapsus Pictus",
+    price: 75,
+    rating: 4,
+    image: plant6,
+    category: {
+      id: 1,
+      name: 'New Arrival'
+    },
+  },
 ];
 
 export const greenHouseBook = {
