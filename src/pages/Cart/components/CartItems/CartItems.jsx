@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Modal from '#Components/shared/Modal';
+import Modal from '#components/shared/Modal';
 import CartItemsTable from '../CartItemsTable';
 import toast from 'react-hot-toast';
 const CartItems = ({cartItems, dispatch}) => {

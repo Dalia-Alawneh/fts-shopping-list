@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom"
-import { CartProvider } from "./Context/CartContext.jsx"
+import { CartProvider } from "./context/CartContext.jsx"
 import Cart from "./Pages/Cart"
 import Checkout from "./Pages/Checkout"
 import { Toaster } from "react-hot-toast"
 import NotFound from "./Pages/NotFound";
-import Layout from "./Components/shared/Layout/Layout.jsx";
+import Layout from "./components/shared/Layout/Layout.jsx";
 import ProductsPage from "./Pages/Products";
 import Home from "./Pages/Home"
 

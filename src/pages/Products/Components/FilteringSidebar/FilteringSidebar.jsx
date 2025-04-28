@@ -1,4 +1,4 @@
-import Input from "#Components/ui/Input"
+import Input from "#components/ui/Input"
 
 const FilteringSidebar = ({filters, handleInputChange, categories}) => {
   return (

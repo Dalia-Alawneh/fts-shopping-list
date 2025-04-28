@@ -1,1 +1,1 @@
-export {default} from './CartTotal.jsx'
+export { default } from './CartTotal.jsx'

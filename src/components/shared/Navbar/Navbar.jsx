@@ -7,7 +7,7 @@ import {
 import logo from '#assets/logo.svg';
 import { NavLink } from "react-router-dom";
 import { customInputTheme } from '../../../theme/index.js';
-import CartNavLink from "./CartNavLink";
+import CartNavLink from "./CartNavLink/index.js";
 
 const Navbar = () => {
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
             ? "text-primary-green font-bold hover:text-primary-green text-base"
             : "text-gray-700 dark:text-white hover:text-primary-green text-base"
         }>Products</NavLink>
-        <CartNavLink/>
+        <CartNavLink />
       </NavbarCollapse>
     </Nav>
   );

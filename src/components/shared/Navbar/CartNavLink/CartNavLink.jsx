@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { NavLink } from "react-router-dom";
-import { CartContext } from '../../../../Context/CartContext.jsx';
+import { CartContext } from '../../../../context/CartContext.jsx';
 import { ShoppingCartIcon } from 'lucide-react';
 
 const CartNavLink = () => {

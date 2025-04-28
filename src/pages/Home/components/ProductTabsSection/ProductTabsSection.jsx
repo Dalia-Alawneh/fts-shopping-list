@@ -1,8 +1,8 @@
 import plantBanner from '#assets/plants/plantbanner.png';
-import { categories } from '#Components/constants';
-import TabBar from '#Components/shared/TabBar';
+import { categories } from '#components/constants';
+import TabBar from '#components/shared/TabBar';
 import { useState } from 'react'
-import Products from '../../../../Components/shared/Products/Products.jsx';
+import Products from '../../../../components/shared/Products/Products.jsx';
 
 const ProductTabsSection = ({ products }) => {
   const [activeTab, setActiveTab] = useState(categories[0]);

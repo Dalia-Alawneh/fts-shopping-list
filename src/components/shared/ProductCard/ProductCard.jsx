@@ -1,8 +1,8 @@
 import { ShoppingCart } from 'lucide-react';
 import React, { useContext } from 'react'
-import RatingStars from '#Components/ui/RatingStars';
+import RatingStars from '#components/ui/RatingStars';
 import toast from 'react-hot-toast';
-import { CartContext } from '../../../Context/CartContext.jsx';
+import { CartContext } from '../../../context/CartContext.jsx';
 
 const ProductCard = ({ product }) => {
   const { image, name, price, rating } = product;

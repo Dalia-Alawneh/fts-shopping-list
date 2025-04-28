@@ -1,8 +1,8 @@
-import { categories, products } from "../../Components/constants/index.js"
-import PageHeader from "../../Components/shared/PageHeader/PageHeader.jsx"
-import Products from "../../Components/shared/Products/Products.jsx"
+import { categories, products } from "../../components/constants/index.js"
+import PageHeader from "../../components/shared/PageHeader/PageHeader.jsx"
+import Products from "../../components/shared/Products/Products.jsx"
 import { useState } from "react"
-import FilteringSidebar from "./Components/FilteringSidebar"
+import FilteringSidebar from "./components/FilteringSidebar/index.js"
 
 const ProductsPage = () => {
   const [filters, setFilters] = useState({

@@ -1,14 +1,14 @@
 import React from 'react'
-import Header from './Components/Header'
-import TipsSection from './Components/TipsSection'
-import ProductTabsSection from './Components/ProductTabsSection/ProductTabsSection.jsx'
-import { products } from '../../Components/constants'
+import Header from './components/Header/index.js'
+import TipsSection from './components/TipsSection/index.js'
+import ProductTabsSection from './components/ProductTabsSection/ProductTabsSection.jsx'
+import { products } from '../../components/constants/index.js'
 
 const Home = () => {
   return (
     <>
       <Header />
-      <ProductTabsSection products={products}/>
+      <ProductTabsSection products={products} />
       <TipsSection />
     </>
   )
