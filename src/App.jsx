@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { CartProvider } from "./context/CartContext.jsx"
+import { CartProvider } from "./context/CartContext.jsx";
 import Cart from "./Pages/Cart"
 import Checkout from "./Pages/Checkout"
 import { Toaster } from "react-hot-toast"
