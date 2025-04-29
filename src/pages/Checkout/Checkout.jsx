@@ -1,5 +1,5 @@
 import PageHeader from "../../components/shared/PageHeader";
-import CheckoutForm from "./components/CheckoutForm"
+import CheckoutForm from "./Components/CheckoutForm"
 
 const Checkout = () => {
   return (
