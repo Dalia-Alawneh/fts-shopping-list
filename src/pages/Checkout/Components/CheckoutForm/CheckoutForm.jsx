@@ -2,7 +2,7 @@ import { CheckCircle2, CheckCircle2Icon } from "lucide-react";
 import Modal from "#components/shared/Modal";
 import Input from "#components/ui/Input";
 import { useContext, useState } from "react";
-import { CartContext } from "../../../../context/CartContext.jsx";
+import { CartContext } from "../../../../context/CartContext.js";
 import toast from "react-hot-toast";
 
 const CheckoutForm = () => {
