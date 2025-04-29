@@ -1,8 +1,8 @@
 import { categories, products } from "../../components/constants/index.js"
-import PageHeader from "../../components/shared/PageHeader/PageHeader.jsx"
+import PageHeader from "../../components/shared/PageHeader/PageHeader.jsx";
 import Products from "../../components/shared/Products/Products.jsx"
+import FilteringSidebar from './components/FilteringSidebar/FilteringSidebar.jsx'
 import { useState } from "react"
-import FilteringSidebar from "./components/FilteringSidebar"
 
 const ProductsPage = () => {
   const [filters, setFilters] = useState({
@@ -32,7 +32,7 @@ const ProductsPage = () => {
       <PageHeader title="Products" />
       <section className="container mx-auto px-10 my-10">
         <div className="grid grid-cols-7 gap-8">
-          <FilteringSidebar
+          <FilteringSidebar 
             handleInputChange={handleInputChange}
             filters={filters}
             categories={categories}
