@@ -2,7 +2,7 @@ import { categories, products } from "../../components/constants/index.js"
 import PageHeader from "../../components/shared/PageHeader/PageHeader.jsx"
 import Products from "../../components/shared/Products/Products.jsx"
 import { useState } from "react"
-import FilteringSidebar from "./components/FilteringSidebar/index.js"
+import FilteringSidebar from "./components/FilteringSidebar"
 
 const ProductsPage = () => {
   const [filters, setFilters] = useState({
