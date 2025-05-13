@@ -4,7 +4,7 @@ import Cart from "./pages/Cart/index.jsx"
 import Checkout from "./pages/Checkout/index.js"
 import { Toaster } from "react-hot-toast"
 import NotFound from "./pages/NotFound/index.js";
-import Layout from "./components/shared/Layout/Layout.jsx";
+import RootLayout from "./components/shared/RootLayout/RootLayout.jsx";
 import ProductsPage from "./pages/Products/index.js";
 import Home from "./pages/Home/index.js"
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <CartProvider>
       <Routes>
-        <Route path="/" Component={Layout}>
+        <Route path="/" Component={RootLayout}>
           <Route index Component={Home} />
           <Route path="products" Component={ProductsPage} />
           <Route path="cart" Component={Cart} />
