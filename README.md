@@ -1,4 +1,4 @@
-# 🛒 FTS Shopping List
+# 🛒 Shopping List
 
 A simple shopping list app built with **React**, styled with **Tailwind CSS**, and powered by **Context API + useReducer** for state management. The app displays products, supports category and price filtering, and allows users to manage a shopping cart and checkout process.
 
